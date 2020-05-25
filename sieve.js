@@ -18,6 +18,9 @@ function FindPrimes() {
             primeNumbers.push(i);
         }
     }
-
-    document.getElementById("resultDiv").innerHTML = primeNumbers;
+    document.getElementById("resultDiv").innerHTML =
+        '<p style="font-weight:bold;">Prime Numbers: </p>';
+    for (j = 0; j < primeNumbers.length; j++) {
+        document.getElementById("resultDiv").innerHTML += primeNumbers[j] + "<br>";
+    }
 }
